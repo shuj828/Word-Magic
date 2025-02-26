@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英文单词消消乐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>英文单词消消乐</h1>
+        <div class="game-info">
+            <div>得分: <span id="score">0</span></div>
+            <div>时间: <span id="timer">0</span> 秒</div>
+        </div>
+        <div class="game-board">
+            <div id="chinese-cards" class="cards-column"></div>
+            <div id="english-cards" class="cards-column"></div>
+        </div>
+        <div id="message" class="message"></div>
+        <button id="start-button" onclick="startGame()">开始游戏</button>
+        <button id="next-level-button" class="hidden" onclick="nextLevel()">下一关</button>
+    </div>
+
+    <!-- 音效 -->
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="success-sound" src="success.mp3"></audio>
+    <audio id="fail-sound" src="fail.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
